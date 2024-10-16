@@ -34,4 +34,21 @@
             RC(3,0) RC(3,1) RC(3,2) RC(3,3)
         >;
     };
+    // Rotary Encoder 1 (switch: D8, left: D7, right: D6)
+    encoder1: encoder@1 {
+        compatible = "zmk,ec11-encoder";
+        pin-a = <&pro_micro 7 GPIO_ACTIVE_HIGH>;  // D7 (left)
+        pin-b = <&pro_micro 6 GPIO_ACTIVE_HIGH>;  // D6 (right)
+        pin-press = <&pro_micro 8 GPIO_ACTIVE_HIGH>;  // D8 (switch)
+        resolution = <2>;
+    };
+
+    // Rotary Encoder 2 (switch: D5, left: D4, right: D3)
+    encoder2: encoder@2 {
+        compatible = "zmk,ec11-encoder";
+        pin-a = <&pro_micro 4 GPIO_ACTIVE_HIGH>;  // D4 (left)
+        pin-b = <&pro_micro 3 GPIO_ACTIVE_HIGH>;  // D3 (right)
+        pin-press = <&pro_micro 5 GPIO_ACTIVE_HIGH>;  // D5 (switch)
+        resolution = <2>;
+    };
 };
