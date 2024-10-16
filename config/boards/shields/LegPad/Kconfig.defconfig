@@ -1,0 +1,6 @@
+if SHIELD_LEGPAD
+
+    config ZMK_KEYBOARD_NAME
+        default "LegPad"
+
+    endif

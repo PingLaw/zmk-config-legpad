@@ -1,0 +1,2 @@
+config SHIELD_LEGPAD
+    def_bool $(shields_list_contains, LegPad)
