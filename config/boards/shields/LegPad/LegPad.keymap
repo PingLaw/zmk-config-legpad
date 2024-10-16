@@ -15,18 +15,18 @@
             >;
         }; 
     };
-    encoder_bindings {
-        compatible = "zmk,behavior-binding";
+    sensor-bindings {
+        compatible = "zmk,sensor-binding";
 
         // Rotary Encoder 1
-        encoder1 {
+        sensor1 {
             rotate_cw = &kp VOL_UP;       // Rotate clockwise increases volume
             rotate_ccw = &kp VOL_DN;      // Rotate counterclockwise decreases volume
             press = &kp MUTE;             // Press to mute
         };
 
         // Rotary Encoder 2
-        encoder2 {
+        sensor2 {
             rotate_cw = &kp PGUP;         // Rotate clockwise scrolls page up
             rotate_ccw = &kp PGDN;        // Rotate counterclockwise scrolls page down
             press = &kp ENTER;            // Press to enter
